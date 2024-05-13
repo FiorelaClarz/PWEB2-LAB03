@@ -8,13 +8,34 @@
     
 </head>
 <body>
-    <h1>Cambiar Estilo de Texto</h1>
+
+    <h1>EJERICIO 6.1 Cambiar Estilo de Texto</h1>
     <p id="texto">¡Este es un texto de ejemplo!</p>
     <button id="aumentarBtn" onclick="cambiarTamaño(24)">Aumentar Tamaño</button>
     <button id="disminuirBtn" onclick="cambiarTamaño(16)">Disminuir Tamaño</button>
     <button onclick="cambiarColor('red')">Rojo</button>
     <button onclick="cambiarColor('blue')">Azul</button>
     <button onclick="cambiarColor('green')">Verde</button>
+    
+    
+    <h1>EJERICIO 6.2 Calculadora Dinámica</h1>
+    <input type="number" id="input1" placeholder="Argumento 1">
+    <select id="operator">
+        <option value="suma">+</option>
+        <option value="resta">-</option>
+        <option value="multiplicacion">*</option>
+        <option value="division">/</option>
+        <option value="and">&amp;&amp;</option>
+        <option value="or">||</option>
+        <option value="xor">^</option>
+        <option value="not">~</option>
+        <option value="leftShift">&lt;&lt;</option>
+        <option value="rightShift">>></option>
+    </select>
+    <input type="number" id="input2" placeholder="Argumento 2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado"></p>
+
     <script src="script6.js"></script>
 </body>
 </html>
